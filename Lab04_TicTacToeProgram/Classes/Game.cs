@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Lab04_TicTacToeProgram.Classes
 {
-    class Game
+    public class Game
     {
         public Player PlayerOne { get; set; }
         public Player PlayerTwo { get; set; }
         public Player Winner { get; set; }
         public Board Board { get; set; }
-
+        public Player currentPlayer { get; set; }
 
         /// <summary>
         /// Require 2 players and a board to start a game. 
@@ -24,6 +24,7 @@ namespace Lab04_TicTacToeProgram.Classes
             PlayerOne = p1;
             PlayerTwo = p2;
             Board = new Board();
+            currentPlayer = p1;
         }
 
         /// <summary>
@@ -49,6 +50,23 @@ namespace Lab04_TicTacToeProgram.Classes
 
             Use any and all pre-existing methods in this program to help construct the method logic. 
              */
+            int turns = 0;
+            Board.DisplayBoard();
+            while (turns<9)
+            {
+                currentPlayer.TakeTurn(Board);
+                Board.DisplayBoard();
+                turns++;
+                SwitchPlayer();
+                if (CheckForWinner(Board))
+                {
+                    Winner= currentPlayer;
+                    break;
+                }
+                currentPlayer=NextPlayer();
+            }
+            if (turns == 9 && !CheckForWinner(Board)) { Winner = null; }
+            return Winner;
         }
 
 
@@ -87,6 +105,10 @@ namespace Lab04_TicTacToeProgram.Classes
                 // TODO:  Determine a winner has been reached. 
                 // return true if a winner has been reached. 
 
+                if(a==b && b==c && c==a)
+                {
+                    return true;
+                }
             }
 
             return false;

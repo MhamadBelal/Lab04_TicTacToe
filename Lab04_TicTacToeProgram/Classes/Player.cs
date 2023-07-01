@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab04_TicTacToeProgram.Classes
 {
-    class Player
+    public class Player
     {
         public string Name { get; set; }
         /// <summary>
@@ -19,13 +19,28 @@ namespace Lab04_TicTacToeProgram.Classes
         /// </summary>
         public bool IsTurn { get; set; }
 
+        /// <summary>
+        /// Initializes a new instance of the Player class with the specified name and marker.
+        /// </summary>
+        /// <param name="Name">The Player's Name</param>
+        /// <param name="Marker">The Player's Mark (O,X)</param>
+        public Player(string Name,string Marker)
+        {
+            this.Name = Name;
+            this.Marker = Marker;
+        }
 
+        /// <summary>
+        /// This function return the position of the added mark. and it is used in TakeTurn method
+        /// </summary>
+        /// <param name="board">Board Type</param>
+        /// <returns>Postion Type</returns>
         public Position GetPosition(Board board)
         {
             Position desiredCoordinate = null;
             while (desiredCoordinate is null)
             {
-                Console.WriteLine("Please select a location");
+                Console.Write("Please select a location: ");
                 Int32.TryParse(Console.ReadLine(), out int position);
                 desiredCoordinate = PositionForNumber(position);
             }
@@ -33,7 +48,11 @@ namespace Lab04_TicTacToeProgram.Classes
 
         }
 
-
+        /// <summary>
+        /// This function will allow the player to choose a location to add their marks
+        /// </summary>
+        /// <param name="position">int type</param>
+        /// <returns>Position Type</returns>
         public static Position PositionForNumber(int position)
         {
             switch (position)
@@ -52,23 +71,30 @@ namespace Lab04_TicTacToeProgram.Classes
             }
         }
 
-
+        /// <summary>
+        /// This function will allow user to play the game as turns between them
+        /// </summary>
+        /// <param name="board">Board type</param>
         public void TakeTurn(Board board)
         {
             IsTurn = true;
 
-            Console.WriteLine($"{Name} it is your turn");
+            Console.Write($"{Name}, it is your turn. ");
 
             Position position = GetPosition(board);
 
-            if (Int32.TryParse(board.GameBoard[position.Row, position.Column], out int _))
-            {
-                board.GameBoard[position.Row, position.Column] = Marker;
-            }
-            else
+            while (!IsPositionEmpty(board, position))
             {
                 Console.WriteLine("This space is already occupied");
+                position = GetPosition(board);
             }
+
+            board.GameBoard[position.Row, position.Column] = Marker;
+        }
+
+        public bool IsPositionEmpty(Board board, Position position)
+        {
+            return Int32.TryParse(board.GameBoard[position.Row, position.Column], out _);
         }
     }
 }

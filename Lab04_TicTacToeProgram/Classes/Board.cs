@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab04_TicTacToeProgram.Classes
 {
-    class Board
+    public class Board
     {
         /// <summary>
 		/// Tic Tac Toe Gameboard states
@@ -21,9 +21,20 @@ namespace Lab04_TicTacToeProgram.Classes
 
         public void DisplayBoard()
         {
-
-            //TODO: Output the board to the console
-
+            /// <summary>
+            /// Displays the current Board of the game. It used in Play methd.
+            /// </summary>
+            Console.WriteLine();
+            for(int i=0;i<3;i++)
+            {
+                Console.Write("\t");
+                for(int j = 0; j < 3;j++)
+                {
+                    Console.Write($"{GameBoard[i,j]} | ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
         }
     }
 }
