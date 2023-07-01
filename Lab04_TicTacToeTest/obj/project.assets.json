@@ -1712,6 +1712,16 @@
         "build": {
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Lab04_TicTacToeProgram/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Lab04_TicTacToeProgram.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lab04_TicTacToeProgram.dll": {}
+        }
       }
     }
   },
@@ -5506,10 +5516,16 @@
         "xunit.runner.visualstudio.2.4.5.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Lab04_TicTacToeProgram/1.0.0": {
+      "type": "project",
+      "path": "../Lab04_TicTacToeProgram/Lab04_TicTacToeProgram.csproj",
+      "msbuildProject": "../Lab04_TicTacToeProgram/Lab04_TicTacToeProgram.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Lab04_TicTacToeProgram >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "coverlet.collector >= 3.2.0",
       "xunit >= 2.4.2",
@@ -5542,7 +5558,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Lenovo\\source\\repos\\MhamadBelal\\Lab04_TicTacToe\\Lab04_TicTacToeProgram\\Lab04_TicTacToeProgram.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\MhamadBelal\\Lab04_TicTacToe\\Lab04_TicTacToeProgram\\Lab04_TicTacToeProgram.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

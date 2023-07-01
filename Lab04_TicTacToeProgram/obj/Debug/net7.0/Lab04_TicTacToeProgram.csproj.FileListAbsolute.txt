@@ -3,3 +3,13 @@ C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\
 C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\obj\Debug\net7.0\Lab04_TicTacToeProgram.AssemblyInfoInputs.cache
 C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\obj\Debug\net7.0\Lab04_TicTacToeProgram.AssemblyInfo.cs
 C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\obj\Debug\net7.0\Lab04_TicTacToeProgram.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\bin\Debug\net7.0\Lab04_TicTacToeProgram.exe
+C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\bin\Debug\net7.0\Lab04_TicTacToeProgram.deps.json
+C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\bin\Debug\net7.0\Lab04_TicTacToeProgram.runtimeconfig.json
+C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\bin\Debug\net7.0\Lab04_TicTacToeProgram.dll
+C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\bin\Debug\net7.0\Lab04_TicTacToeProgram.pdb
+C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\obj\Debug\net7.0\Lab04_TicTacToeProgram.dll
+C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\obj\Debug\net7.0\refint\Lab04_TicTacToeProgram.dll
+C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\obj\Debug\net7.0\Lab04_TicTacToeProgram.pdb
+C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\obj\Debug\net7.0\Lab04_TicTacToeProgram.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\MhamadBelal\Lab04_TicTacToe\Lab04_TicTacToeProgram\obj\Debug\net7.0\ref\Lab04_TicTacToeProgram.dll

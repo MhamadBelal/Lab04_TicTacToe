@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lab04_TicTacToeProgram\Lab04_TicTacToeProgram.csproj" />
+  </ItemGroup>
+
 </Project>
