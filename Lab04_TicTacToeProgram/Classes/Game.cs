@@ -49,7 +49,6 @@ namespace Lab04_TicTacToeProgram.Classes
 
             Use any and all pre-existing methods in this program to help construct the method logic. 
              */
-            return PlayerOne;   //this line should be edited
         }
 
 
